@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi Novia ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="hearts-bg">
+        <div class="heart"></div><div class="heart"></div><div class="heart"></div>
+        <div class="heart"></div><div class="heart"></div><div class="heart"></div>
+        <div class="heart"></div><div class="heart"></div><div class="heart"></div>
+    </div>
+
+    <nav class="sidebar">
+        <div class="logo-area">Nuestra Historia</div>
+        
+        <div class="months-scroll" id="monthsContainer">
+            <button class="month-btn active" data-month="enero">Enero ✨</button>
+            <button class="month-btn" data-month="febrero">Febrero 💘</button>
+            <button class="month-btn" data-month="marzo">Marzo 🌸</button>
+            <button class="month-btn" data-month="abril">Abril 🌼</button>
+            <button class="month-btn" data-month="mayo">Mayo 🎥</button>
+            <button class="month-btn" data-month="junio">Junio ☀️</button>
+            <button class="month-btn" data-month="julio">Julio 🏖️</button>
+            <button class="month-btn" data-month="agosto">Agosto 🪁</button>
+            <button class="month-btn" data-month="septiembre">Septiembre 🍂</button>
+            <button class="month-btn" data-month="octubre">Octubre 🎃</button>
+            <button class="month-btn" data-month="noviembre">Noviembre 🧣</button>
+            <button class="month-btn" data-month="diciembre">Diciembre 🎄</button>
+        </div>
+
+        <div class="special-btn-container">
+            <button class="magic-btn" id="surpriseBtn">🎁 Sorpresa</button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        
+        <div class="header-pill" id="tituloMes">Recuerdos de Enero</div>
+
+        <div class="carousel-container">
+            
+            <div class="photo-frame">
+                <button class="nav-btn prev" id="prevBtn">&#10094;</button>
+                
+                <img id="fotoActual" src="" alt="Foto">
+                
+                <video id="videoActual" controls style="display: none; width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                    Tu navegador no soporta videos.
+                </video>
+                
+                <button class="nav-btn next" id="nextBtn">&#10095;</button>
+            </div>
+
+            <div class="photo-caption">
+                <p id="textoFoto">Nuestro primer viaje juntos ❤️</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <div id="modalSorpresa" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>¡Te Amo Muchísimo! ❤️</h2>
+            <p>Gracias por cada uno de estos meses. Eres lo mejor que me ha pasado. Lo que ha hecho mas especial todo el año es que todo lo disfrute contigo mi amor</p>
+            <div class="big-heart">💖</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
